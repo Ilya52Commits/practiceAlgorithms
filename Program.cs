@@ -4,22 +4,23 @@ namespace ConsoleApp1
 {
   internal abstract class Program
   {
+    #region Methods 
+    /* Метод сортировки пирамиды */
     private static void s_stortHeap(int[] arr)
     {
-        int N = arr.Length;
+      int N = arr.Length;
  
-        for (int i = N / 2 - 1; i >= 0; i--)
-            s_heapifyMethod(arr, N, i);
+      for (int i = N / 2 - 1; i >= 0; i--)
+        s_heapifyMethod(arr, N, i);
 
-        for (int i = N - 1; i > 0; i--) {
-            int temp = arr[0];
-            arr[0] = arr[i];
-            arr[i] = temp;
- 
-            s_heapifyMethod(arr, i, 0);
-        }
+      for (int i = N - 1; i > 0; i--) 
+      {
+        (arr[0], arr[i]) = (arr[i], arr[0]);
+        s_heapifyMethod(arr, i, 0);
+      }
     }
 
+    /* Метод построения пирамиды */
     private static void s_heapifyMethod(int[] arr, int N, int i)
     {
       int lessest = i; 
@@ -34,19 +35,16 @@ namespace ConsoleApp1
 
       if (lessest != i)
       {
-        int swap = arr[i];
-        arr[i] = arr[lessest];
-        arr[lessest] = swap;
-
+        (arr[i], arr[lessest]) = (arr[lessest], arr[i]);
         s_heapifyMethod(arr, N, lessest);
       }
     }
+    #endregion
 
     /* Главный метод */
     public static void Main()
     {
       int[] arr = { 12, 11, 13, 5, 6, 7 };
-      int length = arr.Length;
       s_stortHeap(arr);
 
       for (int i = 0; i < arr.Length; i++)
