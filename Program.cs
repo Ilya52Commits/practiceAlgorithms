@@ -1,54 +1,58 @@
 ﻿using System;
+using System.Collections.Generic;
 
-namespace ConsoleApp1
+namespace ConsoleApp1;
+internal abstract class Program
 {
-  internal abstract class Program
+  #region Methods 
+  /* Pyramid sorting method */
+  private static void s_pyramidSortingMethod(int[] arr)
   {
-    #region Methods 
-    /* Метод сортировки пирамиды */
-    private static void s_stortHeap(int[] arr)
-    {
-      int N = arr.Length;
+    var n = arr.Length;
  
-      for (int i = N / 2 - 1; i >= 0; i--)
-        s_heapifyMethod(arr, N, i);
+    for (var i = n / 2 - 1; i >= 0; i--)
+      s_buildingPyramidMethod(arr, n, i);
 
-      for (int i = N - 1; i > 0; i--) 
-      {
-        (arr[0], arr[i]) = (arr[i], arr[0]);
-        s_heapifyMethod(arr, i, 0);
-      }
-    }
-
-    /* Метод построения пирамиды */
-    private static void s_heapifyMethod(int[] arr, int N, int i)
+    for (var i = n - 1; i > 0; i--) 
     {
-      int lessest = i; 
-      int l = 2 * i + 1; 
-      int r = 2 * i + 2; 
-
-      if (l < N && arr[l] < arr[lessest])
-        lessest = l;
-
-      if (r < N && arr[r] < arr[lessest])
-        lessest = r;
-
-      if (lessest != i)
-      {
-        (arr[i], arr[lessest]) = (arr[lessest], arr[i]);
-        s_heapifyMethod(arr, N, lessest);
-      }
+      (arr[0], arr[i]) = (arr[i], arr[0]);
+      s_buildingPyramidMethod(arr, i, 0);
     }
-    #endregion
+  }
 
-    /* Главный метод */
-    public static void Main()
+  /* Method of building a pyramid */
+  private static void s_buildingPyramidMethod(IList<int> arr, int n, int i)
+  {
+    while (true)
     {
-      int[] arr = { 12, 11, 13, 5, 6, 7 };
-      s_stortHeap(arr);
+      var less = i;
+      var l = 2 * i + 1;
+      var r = 2 * i + 2;
 
-      for (int i = 0; i < arr.Length; i++)
-        Console.WriteLine(arr[i]);
+      if (l < n && arr[l] < arr[less]) less = l;
+
+      if (r < n && arr[r] < arr[less]) less = r;
+
+      if (less != i)
+      {
+        (arr[i], arr[less]) = (arr[less], arr[i]);
+        i = less;
+        continue;
+      }
+
+      break;
     }
+  }
+  #endregion
+
+  /* Main method */
+  public static void Main()
+  {
+    int[] array = { 12, 11, 13, 5, 6, 7 };
+      
+    s_pyramidSortingMethod(array);
+      
+    foreach (var value in array)
+      Console.WriteLine(value);
   }
 }
