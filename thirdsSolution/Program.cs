@@ -1,15 +1,14 @@
 ﻿using System;
 
-namespace thirdsSolution
+namespace thirdsSolution;
+internal abstract class Program
 {
-  internal abstract class Program
+
+  
+  /* Главный метод */
+  public static void Main()
   {
-
-    /* Main method */
-    public static void Main()
-    {
-
-      Console.WriteLine();
-    }
+    
+    Console.WriteLine();
   }
 }
