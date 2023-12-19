@@ -5,11 +5,12 @@ namespace ConsoleApp1;
 internal abstract class Program
 {
   #region Methods 
-  /* Pyramid sorting method */
-  private static void s_pyramidSortingMethod(int[] arr)
+  /* Метод сортировки пирамидой */
+  private static void s_pyramidSortingMethod(IList<int> arr)
   {
-    var n = arr.Length;
- 
+    // присваиваем длину массива
+    var n = arr.Count;
+    
     for (var i = n / 2 - 1; i >= 0; i--)
       s_buildingPyramidMethod(arr, n, i);
 
@@ -20,7 +21,7 @@ internal abstract class Program
     }
   }
 
-  /* Method of building a pyramid */
+  /* Метод построение пирамиды */
   private static void s_buildingPyramidMethod(IList<int> arr, int n, int i)
   {
     while (true)
@@ -45,7 +46,7 @@ internal abstract class Program
   }
   #endregion
 
-  /* Main method */
+  /* Главный метод */
   public static void Main()
   {
     int[] array = { 12, 11, 13, 5, 6, 7 };
