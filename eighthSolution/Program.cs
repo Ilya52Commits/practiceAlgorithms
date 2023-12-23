@@ -29,37 +29,53 @@ internal abstract class Program
     {
       // проходимся от левого до правого диапазона
       for (var i = left; i <= right; ++i)
-        // если элемент массива
-        // больше максимального
+        // если максимальный элемент
+        // меньше элемента массива
         if (max < Array[i])
-          // присваиваем новый
-          // максимальный элемент
+          // присваиваем новый максимальный элемент
           max = Array[i]; 
     }
     else
     {
-      // проходимся от
+      // проходимся по левому "хвоста"
       for (int i = left, end = (c1 + 1) * N - 1; i <= end; ++i)
+        // если максимальный элемент
+        // меньше элемента массива
         if (max < Array[i])
+          // присваиваем новый максимальный элемент
           max = Array[i];
+      // проход по средним блокам
       for (var i= c1 + 1; i <= c2 - 1; ++i)
+        // если максимальный элемент
+        // меньше элемента массива
         if (max < Array[i])
+          // присваиваем новый максимальный элемент
           max = Array[i];
+      // прозодит по правому "хвосту"
       for (var i= c2 * N; i <= right; ++i)
+        // если максимальный элемент
+        // меньше элемента массива
         if (max < Array[i])
+          // присваиваем новый максимальный элемент
           max = Array[i];
     }
     
+    // позвращение
+    // максимального элемента
     return max; 
   }
 
   /* Построение массива максимальных элементов */
   private static void s_buildArrayMaxValueMethod()
   {
+    // построение массива максимальных элементов 
     for (var i = 0; i < N; i++)
     {
+      // расчёт левого индекса блока
       var arrLeft = i * N;
+      // расчёт правого индекса блока
       var arrRight = Math.Min((i + 1) * N, Array.Length);
+      // присваивание максимальнгого элемента блока
       ArrayMax[i] += s_findMaxValueBlock(arrLeft, arrRight);
     }
   }
@@ -67,35 +83,54 @@ internal abstract class Program
   /* Нахождение максимального элемента в блоке */
   private static int s_findMaxValueBlock(int left, int right)
   {
+    // инициализация переменной
+    // максимального элемента
     var max = 0; 
     
-    // проходимся по блоку
+    // проход по блоку
     for (var i = left; i < right; i++)
-      // если элемент меньше элемента массива
+      // если максимальный элемент
+      // меньше элемента массива
       if (max < Array[i])
         // то присваиваем его
         max = Array[i];
   
-    // возвращаем максимальное значение
+    // позвращение
+    // максимального элемента
     return max;
   }
 
   /* Изменение элемента массива */
   private static void s_getValueMethod(int index, int value)
   {
+    // изменение элемента массива
     Array[index] = value;
+    // расчёт индекса блока
     var blockIndex = (index / N);
+    // присвоение начального элемента
     var max = Array[blockIndex * N]; 
-    int k = blockIndex * N;
+    // создание начального индекса массива
+    var k = blockIndex * N;
+    
+    // проход по блоку
     for (var i = 0; i < N; i++)
     {
+      // если индекс больше или
+      // равен длине массива 
       if (k >= Array.Length)
+        // то выходим из цикла
         return; 
+      // если максимальный элемент
+      // меньше элемента массива
       if (max < Array[k])
+        // присваиваем новый максимальный элемент
         max = Array[k];
+      
+      // увеличиваем индекс
       k++;
     }
-
+    
+    // обновляем максимальный элемент блока
     ArrayMax[blockIndex] = max; 
   }
   #endregion
@@ -110,7 +145,7 @@ internal abstract class Program
     // построение массива максимальных элементов
     s_buildArrayMaxValueMethod();
     // вывод массива максимальных элементов
-    for (int i = 0; i < ArrayMax.Length - 1; i++)
+    for (var i = 0; i < ArrayMax.Length - 1; i++)
       Console.Write(ArrayMax[i] + " ");
     Console.WriteLine();
     // выводим максимальный элемент
@@ -122,7 +157,7 @@ internal abstract class Program
       Console.Write(value + " ");
     Console.WriteLine();
     // выводим массив максимальных элементов после изменения
-    for (int i = 0; i < ArrayMax.Length - 1; i++)
+    for (var i = 0; i < ArrayMax.Length - 1; i++)
       Console.Write(ArrayMax[i] + " ");
   }
 }
