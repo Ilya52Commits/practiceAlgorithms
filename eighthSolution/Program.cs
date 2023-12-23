@@ -20,19 +20,12 @@ internal abstract class Program
     var max = Array[left];
     var c1 = left / N;
     var c2 = right / N;
-       
-    for (var i = 0; i < N; i++)
-    {
-      var arrLeft = i * N;
-      var arrRight = Math.Min((i + 1) * N, Array.Length);
-      B[i] += s_findMaxValueBlock(arrLeft, arrRight);
-    }
     
     if (c1 == c2)
     {
       for (var i = left; i <= right; ++i)
         if (max < Array[i])
-          max = Array[i];
+          max = Array[i]; 
     }
     else
     {
@@ -48,6 +41,17 @@ internal abstract class Program
     }
     
     return max; 
+  }
+
+  /* Построение массива максимальных элементов */
+  private static void s_buildArrayMaxValueMethod()
+  {
+    for (var i = 0; i < N; i++)
+    {
+      var arrLeft = i * N;
+      var arrRight = Math.Min((i + 1) * N, Array.Length);
+      B[i] += s_findMaxValueBlock(arrLeft, arrRight);
+    }
   }
 
   /* Нахождение максимального элемента в блоке */
@@ -72,9 +76,15 @@ internal abstract class Program
     Array[index] = value;
     var blockIndex = (index / N);
     var max = Array[blockIndex * N]; 
-    for (var i = blockIndex * N; i < index + N; i++)
-      if (max < Array[i])
-        max = Array[i];
+    int k = blockIndex * N;
+    for (var i = 0; i < N; i++)
+    {
+      if (k >= Array.Length)
+        return; 
+      if (max < Array[k])
+        max = Array[k];
+      k++;
+    }
 
     B[blockIndex] = max; 
   }
@@ -83,13 +93,26 @@ internal abstract class Program
   /* Главный метод */
   public static void Main()
   {
-    // выводим максимальный элемент
-    Console.WriteLine(s_findMaxValueMethod(1,3));
-    s_getValueMethod(8, 3);
-    
+    // вывод массива
     foreach (var value in Array)
-      Console.WriteLine(value);
-    foreach (var value in B)
-      Console.WriteLine(value);
+      Console.Write(value + " ");
+    Console.WriteLine();
+    // построение массива максимальных элементов
+    s_buildArrayMaxValueMethod();
+    // вывод массива максимальных элементов
+    for (int i = 0; i < B.Length - 1; i++)
+      Console.Write(B[i] + " ");
+    Console.WriteLine();
+    // выводим максимальный элемент
+    Console.WriteLine($"Максимальный элемет в диапазоне: {s_findMaxValueMethod(1, 3)}");
+    // изменяем элемент массива
+    s_getValueMethod(8, 3);
+    // выводим исходный массив после изменения
+    foreach (var value in Array)
+      Console.Write(value + " ");
+    Console.WriteLine();
+    // выводим массив максимальных элементов после изменения
+    for (int i = 0; i < B.Length - 1; i++)
+      Console.Write(B[i] + " ");
   }
 }
