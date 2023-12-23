@@ -4,14 +4,15 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{6527069E-7A3C-460A-BF1D-718E18477710}</ProjectGuid>
+    <ProjectGuid>{19DA0DD2-A0FF-4EC6-B3C0-4F30B9C3366B}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>tenthSolution</RootNamespace>
-    <AssemblyName>tenthSolution</AssemblyName>
+    <RootNamespace>eleventhSolution</RootNamespace>
+    <AssemblyName>Task-11</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <LangVersion>latest</LangVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>

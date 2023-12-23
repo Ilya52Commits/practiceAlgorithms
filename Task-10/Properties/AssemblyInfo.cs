@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // Общие сведения об этой сборке предоставляются следующим набором
 // набора атрибутов. Измените значения этих атрибутов для изменения сведений,
 // связанные с этой сборкой.
-[assembly: AssemblyTitle("eighthSolution")]
+[assembly: AssemblyTitle("Task-10")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("PRCNIT SSU")]
-[assembly: AssemblyProduct("eighthSolution")]
+[assembly: AssemblyProduct("Task-10")]
 [assembly: AssemblyCopyright("Copyright © PRCNIT SSU 2023")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // Следующий GUID представляет идентификатор typelib, если этот проект доступен из модели COM
-[assembly: Guid("47a54c50-85e3-405f-93f0-584c79593261")]
+[assembly: Guid("6527069e-7a3c-460a-bf1d-718e18477710")]
 
 // Сведения о версии сборки состоят из указанных ниже четырех значений:
 //

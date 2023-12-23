@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // Общие сведения об этой сборке предоставляются следующим набором
 // набора атрибутов. Измените значения этих атрибутов для изменения сведений,
 // связанные с этой сборкой.
-[assembly: AssemblyTitle("eleventhSolution")]
+[assembly: AssemblyTitle("Task-03")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("PRCNIT SSU")]
-[assembly: AssemblyProduct("eleventhSolution")]
+[assembly: AssemblyProduct("Task-03")]
 [assembly: AssemblyCopyright("Copyright © PRCNIT SSU 2023")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // Следующий GUID представляет идентификатор typelib, если этот проект доступен из модели COM
-[assembly: Guid("19da0dd2-a0ff-4ec6-b3c0-4f30b9c3366b")]
+[assembly: Guid("638047fd-1ce7-44d1-bb6a-bd9968c9d392")]
 
 // Сведения о версии сборки состоят из указанных ниже четырех значений:
 //

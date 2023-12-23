@@ -3,23 +3,23 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.34024.191
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "firstSolution", "firstSolution.csproj", "{75FBB49D-DC20-47FB-A9E3-1DF362D7775C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task-01", "Task-01.csproj", "{75FBB49D-DC20-47FB-A9E3-1DF362D7775C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "secondSolution", "secondSolution2\secondSolution.csproj", "{78930A01-C77E-41E3-817E-774B85D50559}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task-02", "secondSolution2\Task-02.csproj", "{78930A01-C77E-41E3-817E-774B85D50559}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "fifthSolution", "fifthSolution2\fifthSolution.csproj", "{4549FA64-3B00-48A3-BC7E-B3895D4B048E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task-05", "fifthSolution2\Task-05.csproj", "{4549FA64-3B00-48A3-BC7E-B3895D4B048E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "sixthSolution", "sixthSolution2\sixthSolution.csproj", "{393AC8B5-588B-4D5C-9976-8405D7E62D2A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task-06", "sixthSolution2\Task-06.csproj", "{393AC8B5-588B-4D5C-9976-8405D7E62D2A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "seventhSolution", "seventhSolution2\seventhSolution.csproj", "{894F545D-7D73-47D2-926E-DC010A547983}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task-07", "seventhSolution2\Task-07.csproj", "{894F545D-7D73-47D2-926E-DC010A547983}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "thirdsSolution", "thirdsSolution\thirdsSolution.csproj", "{638047FD-1CE7-44D1-BB6A-BD9968C9D392}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task-03", "Task-03\Task-03.csproj", "{638047FD-1CE7-44D1-BB6A-BD9968C9D392}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eighthSolution", "eighthSolution\eighthSolution.csproj", "{47A54C50-85E3-405F-93F0-584C79593261}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task-08", "Task-08\Task-08.csproj", "{47A54C50-85E3-405F-93F0-584C79593261}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "tenthSolution", "tenthSolution\tenthSolution.csproj", "{6527069E-7A3C-460A-BF1D-718E18477710}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task-10", "Task-10\Task-10.csproj", "{6527069E-7A3C-460A-BF1D-718E18477710}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eleventhSolution", "eleventhSolution\eleventhSolution.csproj", "{19DA0DD2-A0FF-4EC6-B3C0-4F30B9C3366B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task-11", "Task-11\Task-11.csproj", "{19DA0DD2-A0FF-4EC6-B3C0-4F30B9C3366B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

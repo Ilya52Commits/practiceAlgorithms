@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{47A54C50-85E3-405F-93F0-584C79593261}</ProjectGuid>
+    <ProjectGuid>{6527069E-7A3C-460A-BF1D-718E18477710}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>eighthSolution</RootNamespace>
-    <AssemblyName>eighthSolution</AssemblyName>
+    <RootNamespace>tenthSolution</RootNamespace>
+    <AssemblyName>Task-10</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
