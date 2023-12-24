@@ -5,6 +5,7 @@
     <projectFile>Task-11/Task-11.csproj</projectFile>
     <projectFile>Task-13/Task-13.csproj</projectFile>
     <projectFile>Task-15/Task-15.csproj</projectFile>
+    <projectFile>Task-19/Task-19.csproj</projectFile>
     <projectFile>eighthSolution/eighthSolution.csproj</projectFile>
     <projectFile>eleventhSolution/eleventhSolution.csproj</projectFile>
     <projectFile>fifthSolution2/fifthSolution.csproj</projectFile>
@@ -19,13 +20,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ad15d07b-dd52-49b9-8ba6-3cc30bbc24dc" name="Changes" comment="Finished the ninth solution">
+    <list default="true" id="ad15d07b-dd52-49b9-8ba6-3cc30bbc24dc" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.practiceAlgorithms/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.practiceAlgorithms/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PracticeAlgorithms.sln" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeAlgorithms.sln" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Task-11/App.config" beforeDir="false" afterPath="$PROJECT_DIR$/Task-12/App.config" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Task-11/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Task-12/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Task-11/Properties/AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Task-12/Properties/AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Task-11/Task-11.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Task-12/Task-12.csproj" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,6 +56,7 @@
     ".NET Project.Task-09.executor": "Run",
     ".NET Project.Task-11.executor": "Run",
     ".NET Project.Task-13.executor": "Run",
+    ".NET Project.Task-19.executor": "Run",
     ".NET Project.firstSolution.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -79,7 +77,7 @@
     ]
   }
 }]]></component>
-  <component name="RunManager" selected=".NET Project.Task-11">
+  <component name="RunManager" selected=".NET Project.Task-19">
     <configuration name="Task-09" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
       <option name="PROGRAM_PARAMETERS" value="" />
@@ -143,6 +141,24 @@
       <option name="USE_MONO" value="0" />
       <option name="RUNTIME_ARGUMENTS" value="" />
       <option name="PROJECT_PATH" value="$PROJECT_DIR$/Task-15/Task-15.csproj" />
+      <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
+      <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
+      <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
+      <option name="PROJECT_KIND" value="Console" />
+      <option name="PROJECT_TFM" value="" />
+      <method v="2">
+        <option name="Build" />
+      </method>
+    </configuration>
+    <configuration name="Task-19" type="DotNetProject" factoryName=".NET Project">
+      <option name="EXE_PATH" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="PROJECT_PATH" value="$PROJECT_DIR$/Task-19/Task-19.csproj" />
       <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
       <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
       <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
@@ -324,7 +340,8 @@
       <option name="presentableId" value="Default" />
       <updated>1703333367403</updated>
       <workItem from="1703333374459" duration="3967000" />
-      <workItem from="1703347117044" duration="5565000" />
+      <workItem from="1703347117044" duration="5636000" />
+      <workItem from="1703425912471" duration="3455000" />
     </task>
     <task id="LOCAL-00001" summary="Updated names and syntax in solutions">
       <option name="closed" value="true" />
@@ -350,7 +367,23 @@
       <option name="project" value="LOCAL" />
       <updated>1703352294834</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Finished the solutions">
+      <option name="closed" value="true" />
+      <created>1703352904908</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1703352904908</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Updated">
+      <option name="closed" value="true" />
+      <created>1703352916116</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1703352916116</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -362,6 +395,8 @@
     <MESSAGE value="Updated names and syntax in solutions" />
     <MESSAGE value="Added thirteenth and fifteenth solutions and finished the thirteenth task" />
     <MESSAGE value="Finished the ninth solution" />
-    <option name="LAST_COMMIT_MESSAGE" value="Finished the ninth solution" />
+    <MESSAGE value="Finished the solutions" />
+    <MESSAGE value="Updated" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated" />
   </component>
 </project>
