@@ -6,6 +6,7 @@
     <projectFile>Task-13/Task-13.csproj</projectFile>
     <projectFile>Task-15/Task-15.csproj</projectFile>
     <projectFile>Task-19/Task-19.csproj</projectFile>
+    <projectFile>Task-20/Task-20.csproj</projectFile>
     <projectFile>eighthSolution/eighthSolution.csproj</projectFile>
     <projectFile>eleventhSolution/eleventhSolution.csproj</projectFile>
     <projectFile>fifthSolution2/fifthSolution.csproj</projectFile>
@@ -20,8 +21,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ad15d07b-dd52-49b9-8ba6-3cc30bbc24dc" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.practiceAlgorithms/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.practiceAlgorithms/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="ad15d07b-dd52-49b9-8ba6-3cc30bbc24dc" name="Changes" comment="Finished the nineteenth solution">
       <change beforePath="$PROJECT_DIR$/PracticeAlgorithms.sln" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeAlgorithms.sln" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -40,7 +40,7 @@
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="SWEA" />
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 3
@@ -57,6 +57,7 @@
     ".NET Project.Task-11.executor": "Run",
     ".NET Project.Task-13.executor": "Run",
     ".NET Project.Task-19.executor": "Run",
+    ".NET Project.Task-20.executor": "Run",
     ".NET Project.firstSolution.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -77,7 +78,7 @@
     ]
   }
 }]]></component>
-  <component name="RunManager" selected=".NET Project.Task-19">
+  <component name="RunManager" selected=".NET Project.Task-20">
     <configuration name="Task-09" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
       <option name="PROGRAM_PARAMETERS" value="" />
@@ -159,6 +160,24 @@
       <option name="USE_MONO" value="0" />
       <option name="RUNTIME_ARGUMENTS" value="" />
       <option name="PROJECT_PATH" value="$PROJECT_DIR$/Task-19/Task-19.csproj" />
+      <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
+      <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
+      <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
+      <option name="PROJECT_KIND" value="Console" />
+      <option name="PROJECT_TFM" value="" />
+      <method v="2">
+        <option name="Build" />
+      </method>
+    </configuration>
+    <configuration name="Task-20" type="DotNetProject" factoryName=".NET Project">
+      <option name="EXE_PATH" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="PROJECT_PATH" value="$PROJECT_DIR$/Task-20/Task-20.csproj" />
       <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
       <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
       <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
@@ -341,7 +360,7 @@
       <updated>1703333367403</updated>
       <workItem from="1703333374459" duration="3967000" />
       <workItem from="1703347117044" duration="5636000" />
-      <workItem from="1703425912471" duration="3455000" />
+      <workItem from="1703425912471" duration="3992000" />
     </task>
     <task id="LOCAL-00001" summary="Updated names and syntax in solutions">
       <option name="closed" value="true" />
@@ -383,7 +402,15 @@
       <option name="project" value="LOCAL" />
       <updated>1703352916116</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Finished the nineteenth solution">
+      <option name="closed" value="true" />
+      <created>1703431581540</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1703431581540</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -397,6 +424,7 @@
     <MESSAGE value="Finished the ninth solution" />
     <MESSAGE value="Finished the solutions" />
     <MESSAGE value="Updated" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated" />
+    <MESSAGE value="Finished the nineteenth solution" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finished the nineteenth solution" />
   </component>
 </project>
