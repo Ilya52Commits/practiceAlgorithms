@@ -12,7 +12,6 @@ internal abstract class Program
   // поиск максимальной дистанции
   private static int s_minDistanceMethod(IReadOnlyList<int> dist, IReadOnlyList<bool> sptSet)
   {
-    // Initialize min value
     int min = int.MaxValue, minIndex = -1;
 
     for (var v = 0; v < V; v++)
@@ -25,71 +24,46 @@ internal abstract class Program
     return minIndex;
   }
 
-  // print solution
   private static void s_printSolution(IReadOnlyList<int> dist, List<int> path)
   {
-    Console.WriteLine("Vertex Distance from Source");
+    Console.WriteLine("Расстояние вершины от источника");
     for (var i = 0; i < V; i++)
       Console.WriteLine(i + "\t\t" + dist[i]);
 
-    Console.WriteLine("\nVertices in the path with minimum cost:");
+    Console.WriteLine("\nВершины на пути с минимальными затратами:");
     foreach (var vertex in path)
       Console.WriteLine("B" + (vertex + 1));
   }
   
-  /* Dijkstra method */
+  /* Метод Декстра */
   private static void s_dijkstraMethod(int[,] graph, int src)
   {
-    var dist = new int[V]; // The output array. dist[i]
-    // will hold the minimum
-    // distance from src to i
+    var dist = new int[V]; 
 
-    // sptSet[i] will true if vertex
-    // i is included in shortest path
-    // tree or shortest distance from
-    // src to i is finalized
     var sptSet = new bool[V];
 
-    // Initialize all distances as
-    // MAX_VALUE and stpSet[] as false
     for (var i = 0; i < V; i++)
     {
       dist[i] = int.MaxValue;
       sptSet[i] = false;
     }
 
-    // Distance of source vertex
-    // from itself is always 0
     dist[src] = 0;
 
-    // Find shortest path for all vertices
     for (var count = 0; count < V - 1; count++)
     {
-      // Pick the minimum distance vertex
-      // from the set of vertices not yet
-      // processed. u is always equal to
-      // src in the first iteration.
       var u = s_minDistanceMethod(dist, sptSet);
 
-      // Mark the picked vertex as processed
       sptSet[u] = true;
 
-      // Update dist value of the adjacent
-      // vertices of the picked vertex.
       for (var v = 0; v < V; v++)
       {
-        // Update dist[v] only if it is not in
-        // sptSet, there is an edge from u
-        // to v, and the total weight of the path
-        // from src to v through u is less
-        // than the current value of dist[v]
         if (!sptSet[v] && graph[u, v] != 0 &&
             dist[u] != int.MaxValue && dist[u] + graph[u, v] < dist[v])
           dist[v] = dist[u] + graph[u, v];
       }
     }
 
-    // Store the vertices in the path with minimum cost
     var path = new List<int>();
     for (var i = 0; i < V; i++)
     {
@@ -97,12 +71,11 @@ internal abstract class Program
         path.Add(i);
     }
 
-    // print the constructed distance array and the vertices in the path
     s_printSolution(dist, path);
   }
   #endregion
 
-  /* Main method */
+  /* Главный метод */
   public static void Main()
   {
     var graph = new int[13, 13];

@@ -67,6 +67,15 @@ namespace Task_20
             }
         }
 
+        for (int k = 0; k < n; k++)
+            {
+                for (int i = 0; i < n; i++)
+                {
+                    Console.Write(dist[i, k] + " "); 
+                }
+                Console.WriteLine();
+            }
+
         return dist;
     }
 
