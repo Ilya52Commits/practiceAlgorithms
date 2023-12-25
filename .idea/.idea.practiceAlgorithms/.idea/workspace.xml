@@ -4,6 +4,7 @@
     <projectFile>Task-09/Task-09.csproj</projectFile>
     <projectFile>Task-11/Task-11.csproj</projectFile>
     <projectFile>Task-13/Task-13.csproj</projectFile>
+    <projectFile>Task-14/Task-14.csproj</projectFile>
     <projectFile>Task-15/Task-15.csproj</projectFile>
     <projectFile>Task-19/Task-19.csproj</projectFile>
     <projectFile>Task-20/Task-20.csproj</projectFile>
@@ -21,8 +22,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ad15d07b-dd52-49b9-8ba6-3cc30bbc24dc" name="Changes" comment="Finished the nineteenth solution">
-      <change beforePath="$PROJECT_DIR$/PracticeAlgorithms.sln" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeAlgorithms.sln" afterDir="false" />
+    <list default="true" id="ad15d07b-dd52-49b9-8ba6-3cc30bbc24dc" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.practiceAlgorithms/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.practiceAlgorithms/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,33 +52,33 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    ".NET Project.Task-09.executor": "Run",
-    ".NET Project.Task-11.executor": "Run",
-    ".NET Project.Task-13.executor": "Run",
-    ".NET Project.Task-19.executor": "Run",
-    ".NET Project.Task-20.executor": "Run",
-    ".NET Project.firstSolution.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "editor.preferences.smartKeys_rider",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;.NET Project.Task-09.executor&quot;: &quot;Run&quot;,
+    &quot;.NET Project.Task-11.executor&quot;: &quot;Run&quot;,
+    &quot;.NET Project.Task-13.executor&quot;: &quot;Run&quot;,
+    &quot;.NET Project.Task-19.executor&quot;: &quot;Run&quot;,
+    &quot;.NET Project.Task-20.executor&quot;: &quot;Run&quot;,
+    &quot;.NET Project.firstSolution.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.smartKeys_rider&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "rider.external.source.directories": [
-      "C:\\Users\\Ilya\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\DecompilerCache",
-      "C:\\Users\\Ilya\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\SourcesCache",
-      "C:\\Users\\Ilya\\AppData\\Local\\Symbols\\src"
+  &quot;keyToStringList&quot;: {
+    &quot;rider.external.source.directories&quot;: [
+      &quot;C:\\Users\\Ilya\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\DecompilerCache&quot;,
+      &quot;C:\\Users\\Ilya\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\SourcesCache&quot;,
+      &quot;C:\\Users\\Ilya\\AppData\\Local\\Symbols\\src&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected=".NET Project.Task-20">
     <configuration name="Task-09" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
@@ -124,6 +125,24 @@
       <option name="USE_MONO" value="0" />
       <option name="RUNTIME_ARGUMENTS" value="" />
       <option name="PROJECT_PATH" value="$PROJECT_DIR$/Task-13/Task-13.csproj" />
+      <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
+      <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
+      <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
+      <option name="PROJECT_KIND" value="Console" />
+      <option name="PROJECT_TFM" value="" />
+      <method v="2">
+        <option name="Build" />
+      </method>
+    </configuration>
+    <configuration name="Task-14" type="DotNetProject" factoryName=".NET Project">
+      <option name="EXE_PATH" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="PROJECT_PATH" value="$PROJECT_DIR$/Task-14/Task-14.csproj" />
       <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
       <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
       <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
@@ -360,7 +379,8 @@
       <updated>1703333367403</updated>
       <workItem from="1703333374459" duration="3967000" />
       <workItem from="1703347117044" duration="5636000" />
-      <workItem from="1703425912471" duration="3992000" />
+      <workItem from="1703425912471" duration="4431000" />
+      <workItem from="1703529067593" duration="1023000" />
     </task>
     <task id="LOCAL-00001" summary="Updated names and syntax in solutions">
       <option name="closed" value="true" />
@@ -410,7 +430,23 @@
       <option name="project" value="LOCAL" />
       <updated>1703431581540</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Added the twentieth task">
+      <option name="closed" value="true" />
+      <created>1703432162253</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1703432162253</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Updated">
+      <option name="closed" value="true" />
+      <created>1703432206231</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1703432206231</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -423,8 +459,9 @@
     <MESSAGE value="Added thirteenth and fifteenth solutions and finished the thirteenth task" />
     <MESSAGE value="Finished the ninth solution" />
     <MESSAGE value="Finished the solutions" />
-    <MESSAGE value="Updated" />
     <MESSAGE value="Finished the nineteenth solution" />
-    <option name="LAST_COMMIT_MESSAGE" value="Finished the nineteenth solution" />
+    <MESSAGE value="Added the twentieth task" />
+    <MESSAGE value="Updated" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated" />
   </component>
 </project>
