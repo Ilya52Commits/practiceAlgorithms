@@ -16,9 +16,7 @@ internal abstract class Program
       j = 0;
       i++;
       while (j < m && stroka[i + j] == obraz[j])
-      {
         j++;
-      }
     } while (j < m && i < n - m);
 
     return j == m ? i : -1; 

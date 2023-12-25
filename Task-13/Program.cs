@@ -37,7 +37,7 @@ internal abstract class Program
   public static void Main()
   {
     // создаём массив
-    int[] array = [1, 3, 5, 3, 6, 7, 9];
+    int[] array = { 1, 3, 5, 3, 6, 7, 9 };
     // выводим массив
     Console.Write("Массив: ");
     foreach (var value in array)

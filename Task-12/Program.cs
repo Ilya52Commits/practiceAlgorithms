@@ -111,7 +111,7 @@ internal abstract class Program
     // исходная строки
     var text = "ABAAAABAACD".ToCharArray();
     // элемент для поиска
-    var pat = "ABA".ToCharArray();
+    var pat = "ABAAC".ToCharArray();
     
     // вывод результата алгоритма
     Console.WriteLine("Поиск алгоритмом Бойера и Мура:");
