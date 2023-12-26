@@ -45,31 +45,31 @@ internal abstract class Program
       _adjacencyList = new Dictionary<string, List<Edge>>();
       // читаем файл 
       var lines = File.ReadAllLines($@"{path}file.txt");
-            var vertexes = lines[1].Trim().Split(' ');
-        var listAdjacency = lines.Skip(2).ToArray();
+      var vertexes = lines[1].Trim().Split(' ');
+      var listAdjacency = lines.Skip(2).ToArray();
 
-        foreach (var vertex in vertexes)
-          _adjacencyList[vertex] = new List<Edge> { new Edge("", null) };
+      foreach (var vertex in vertexes)
+        _adjacencyList[vertex] = new List<Edge> { new Edge("", null) };
 
-        var rowCount = listAdjacency.Length;
-        var columnCount = listAdjacency[0].Split(' ').Length;
-        var listAdjacencyArr = new string[rowCount, columnCount];
+      var rowCount = listAdjacency.Length;
+      var columnCount = listAdjacency[0].Split(' ').Length;
+      var listAdjacencyArr = new string[rowCount, columnCount];
 
-        for (var i = 0; i < rowCount; i++)
+      for (var i = 0; i < rowCount; i++)
+      {
+        var values = listAdjacency[i].Split(' ');
+        for (var j = 0; j < columnCount; j++)
+          listAdjacencyArr[i, j] = values[j];
+      }
+
+      for (var i = 0; i < listAdjacencyArr.GetLength(0); i++)
+      {
+        for (var j = 1; j < listAdjacencyArr.GetLength(1); j++)
         {
-          var values = listAdjacency[i].Split(' ');
-          for (var j = 0; j < columnCount; j++)
-            listAdjacencyArr[i, j] = values[j];
+          if (listAdjacencyArr[i, j] != "0")
+            _adjacencyList[(i + 1).ToString()].Add(new Edge(j.ToString(), int.Parse(listAdjacencyArr[i, j])));
         }
-
-        for (var i = 0; i < listAdjacencyArr.GetLength(0); i++)
-        {
-          for (var j = 1; j < listAdjacencyArr.GetLength(1); j++)
-          {
-            if (listAdjacencyArr[i, j] != "0")
-              _adjacencyList[(i + 1).ToString()].Add(new Edge(j.ToString(), int.Parse(listAdjacencyArr[i, j])));
-          }
-        }
+      }
       return true;
     }
 
