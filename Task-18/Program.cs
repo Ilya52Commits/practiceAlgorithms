@@ -1,16 +1,16 @@
 ﻿using System;
 using System.Collections.Generic;
 
-// Class to represent a graph
+// Класс для представления графика
 class Graph
 {
-  // No. of vertices
+  // Количество вершин
   private int V;
 
-  // Array containing adjacency lists
+  // Массив, содержащий списки смежности
   private List<int>[] adj;
 
-  // Constructor
+  // Конструктор
   public Graph(int V)
   {
     this.V = V;
@@ -21,20 +21,20 @@ class Graph
     }
   }
 
-  // Function to add an edge to graph
+  // Функция для добавления ребра к графику
   public void AddEdge(int v, int w)
   {
-    // Add w to v's list
+    // Добавьте w в список v
     adj[v].Add(w);
   }
 
-  // A recursive function used by TopologicalSort
+  // Рекурсивная функция, используемая в топологической сортировке
   private void TopologicalSortUtil(int v, bool[] visited, Stack<int> stack)
   {
-    // Mark the current node as visited
+    // Отметьте текущий узел как посещенный
     visited[v] = true;
 
-    // Recur for all the vertices adjacent to this vertex
+    // Повторяется для всех вершин, смежных с этой вершиной
     foreach (var i in adj[v])
     {
       if (!visited[i])
@@ -43,23 +43,23 @@ class Graph
       }
     }
 
-    // Push current vertex to stack which stores result
+    // Переместите текущую вершину в стек, в котором хранится результат
     stack.Push(v);
   }
 
-  // The function to do Topological Sort. It uses recursive TopologicalSortUtil
+  // Функция для выполнения топологической сортировки. Она использует рекурсивный TopologicalSortUtil
   public void TopologicalSort()
   {
     Stack<int> stack = new Stack<int>();
 
-    // Mark all the vertices as not visited
+    // Отметьте все вершины как не посещенные
     bool[] visited = new bool[V];
     for (int i = 0; i < V; i++)
     {
       visited[i] = false;
     }
 
-    // Call the recursive helper function to store Topological Sort starting from all vertices one by one
+    // Вызовите рекурсивную вспомогательную функцию для сохранения топологической сортировки, начиная со всех вершин по очереди
     for (int i = 0; i < V; i++)
     {
       if (!visited[i])
@@ -68,13 +68,13 @@ class Graph
       }
     }
 
-    // Print contents of stack
-    Console.Write("Following is a Topological Sort of the given graph: ");
+    // Распечатать содержимое стопки
+    Console.Write("Ниже приведен топологический вид данного графа: ");
     while (stack.Count > 0)
     {
       Console.Write(stack.Pop() + " ");
     }
-    Console.WriteLine(); // Add a new line for better formatting
+    Console.WriteLine(); // Добавьте новую строку для лучшего форматирования
   }
 }
 
@@ -83,7 +83,6 @@ class Program
 {
   static void Main()
   {
-    // Create a graph given in the above diagram
     Graph g = new Graph(6);
     g.AddEdge(5, 2);
     g.AddEdge(5, 0);
@@ -94,7 +93,6 @@ class Program
 
     Console.WriteLine("");
 
-    // Function Call
     g.TopologicalSort();
   }
 }
